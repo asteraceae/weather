@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">  
+    <link rel = "stylesheet" href = "./style.css">
+    <script src = "./script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class = "card-popup">
+        <div id="confirm">
+            <div class="message">This is a warning message.</div><br>
+            <button class="yes">OK</button>
+        </div>
+    </div>
+    </body>
+    <div class = "card">
+        <div class = "search">
+            <input type = "text" class = "search-bar" placeholder = "Search">
+            <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 504 504" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                <path 
+                    d="M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z">
+                </path>
+            </svg></button>
+        </div>
+        <div class = "weather">
+            <h1 class = "city">Weather in Chicago</h1>
+            <h1 class = "temp">69°F</h1>
+            <div class = "flex">
+                <img src = "https://openweathermap.org/img/wn/04n.png" alt = "" class = "icon" />
+                <div class = "description">Sunny</div>
+            </div>
+            <div class = "humidity">Humidity: 30%</div>
+            <div class = "speed">Wind speed: 42 km/s</div>
+        </div>
+    </div>
+</body>
+</html>
